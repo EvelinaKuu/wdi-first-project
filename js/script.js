@@ -40,19 +40,19 @@ $(() => {
     },
     {
       question: 'Carmen eats <span class="wordToTranslate"> bread </span> for breakfast.',
-      options: ['pan', 'pescado', 'yogur'],
+      options: ['pescado', 'yogur', 'pan'],
       correct: 'pan'
     },
-    {
-      question: 'Maria is having <span class="wordToTranslate"> icecream </span> for dessert.',
-      options: ['la helado', 'tarta', 'postre'],
-      correct: 'helado'
-    },
-    {
-      question: 'Isabella is having <span class="wordToTranslate"> icecream </span> for dessert.',
-      options: ['helado', 'tarta', 'postre'],
-      correct: 'helado'
-    },
+    // {
+    //   question: 'Maria is having <span class="wordToTranslate"> icecream </span> for dessert.',
+    //   options: ['la helado', 'tarta', 'postre'],
+    //   correct: 'helado'
+    // },
+    // {
+    //   question: 'Isabella is having <span class="wordToTranslate"> icecream </span> for dessert.',
+    //   options: ['helado', 'tarta', 'postre'],
+    //   correct: 'helado'
+    // },
     {
       question: 'Ignacio has three <span class="wordToTranslate"> sisters </span> and one brother.',
       options: ['hermano', 'abuela', 'hermana'],
@@ -134,6 +134,12 @@ $(() => {
   }
 
   );
+  function endOfGame() {
+    level === 9;
+
+  }
+
+  endOfGame();
 });
 
 //
