@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+/** {
+    border: 1px solid black;
+}*/
+
+body {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+.heading {
+  color: white;
+  background-color: #093E5C;
+  height: 25%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+h1 {
+  font-family: "Merriweather", serif;
+  font-size: 40px;
+}
+
+div, section {
+  font-family: "Merriweather", serif;
+  font-size: 30px;
+}
+ /*how do I combain these two?*/
+/*section {
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+}*/
+
+.game {
+  display: block;
+  /*align-items: center;*/
+  color: white;
+  /*height: 320px;
+  width: 1000px;*/
+  background-color: #489BB4;
+  height: 50%;
+}
+
+p {
+ text-align: center;
+}
+
+.sentences {
+  text-align: center;
+
+}
+
+.wordToTranslate{
+
+  font-size: 40px;
+}
+
+.choices {
+
+  display: flex;
+  justify-content: space-around;
+  display:flex;
+
+}
+
+.option {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Merriweather", serif;
+  font-size: 40px;
+  height: 70px;
+  width: 170px;
+
+}
+
+.endOfPage{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 25px;
+  /*flex-basis: 100%;*/
+  background-color: #6BC2A0;
+  color: white;
+  height: 25%;
+}
+
+.level {
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+
+}
+
+.startAgain {
+  background-color: white;
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+  height: 90px;
+  width: 200px;
+}
