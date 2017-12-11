@@ -58,7 +58,7 @@ p {
  text-align: center;
 }
 
-.sentences {
+.sentence {
   text-align: center;
 
 }
@@ -77,10 +77,9 @@ p {
 }
 
 .option {
-  display: flex;
   justify-content: space-between;
   font-family: "Merriweather", serif;
-  font-size: 40px;
+  font-size: 22px;
   height: 70px;
   width: 170px;
   margin: 0;

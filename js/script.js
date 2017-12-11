@@ -1,9 +1,14 @@
 // alert('loaded JS');
 
 
-$(function() {
+$(() => {
+  const $sentence = $('.sentence');
+  const $options = $('.option'); // array of DOM elements (buttons)
   let level = 0;
-  const sentences = [
+  let currentLevel = null;
+  let currentCorrect = null;
+
+  const questionsArray = [
     {
       question: 'Maria would like to have <span class="wordToTranslate"> eggs </span> for breakfast.',
       options: ['manzanas', 'huevos', 'panqueques'],
@@ -16,18 +21,66 @@ $(function() {
       correct: 'autobus'
     }
   ];
+
+  function generateQuestion() {
+    currentLevel = questionsArray[level]; // currentLevel holds the whole object from the array
+    const currentQuestion = currentLevel.question;
+    const currentOptions = currentLevel.options;
+    currentCorrect = currentLevel.correct;
+
+    $sentence.html(currentQuestion); // just updating the DOM with the currentQuestion string
+
+    for (let i = 0; i < currentOptions.length; i++) { // this will run once for each item in the array
+      const wordToAdd = currentOptions[i]; // pull a string out of the options array and store it inside wordToAdd
+      $options.eq(i).text(wordToAdd); // find the button with the same index, and add the words as text
+    }
+  }
+
+  generateQuestion();
+
+
+
   // level++;
   // how to increase level by one
-  console.log(sentences[level].correct);
+  // console.log(sentences[level].correct);
+  // document.getElementsByClass('sentences').innerHTML = sentences[0];
+
+  $options.on('click', (event) => {
+    // console.log('clicked');
+    var usersChoice = event.target.textContent;
+    // store the users choice inside a variable
+    if usersChoice === currentCorrect {
+      alert("Well done! Now translate the next word!");
+    }
+    else {
+        alert("Sorry, try again");
+    };
+    // $usersChoice = currentCorrect;
+    // compare the users choice with the currentCorrect variable
+
+    // if (sentences[level].options === sentences[level].correct) {
+    //   alert("Well done! Now translate the next word!");
+    // }
+    //   else {
+    //     alert("Sorry, try again");
+    // }
+  });
+
+
+  // function determineAnswer {
+  //
+  //
+  //
+  // const text = document.getElementsByClassName('sentences').innerHTML;
+  // text();
+
+// .html sentences[level].question);
+
+  // (sentences[level].options);
 });
 // i would probably have on object for sentences inside that object I´d have a sentence0, sentence1, sentence3, until sentence10. the key of those are the actual sentence in English, the key is the words that is the options like huevos and manzanas and something and the values are true, false and false. Make the button option display the key of the object 1 and make the div with the class sentences show the sentence.
 
-//
-// }
-//  var determineAnswer {
-//    // if the key value is === "true" go to next sentence and add a number +1 to the level p tag class "level"
-//    // else alert a pop up window 1. saying wrong choice, try again, or ig you have time 2. explaining the word and try again
-// }
+
 //
 // // In the DOM
 // $(() => {
@@ -39,7 +92,7 @@ $(function() {
 // // const $reset = $('.button.reset');
 //
 //   function startAgain (){
-//     $level.text('1');
+//     $level.text('0');
 //   }
 //   // $choices.on('click',determineAnswer);
 // //   $startAgain.on('click',level);
