@@ -6,23 +6,65 @@ $(() => {
   const $options = $('.option'); // array of DOM elements (buttons)
   const $displayLevel = $('.displayLevel');
   const $startAgain = $('.startAgain');
+  const $feedback = $('.feedback');
   let level = 0;
   let currentLevel = null;
   let currentCorrect = null;
 
+
   const questionsArray = [
     {
-      question: 'Maria would like to have <span class="wordToTranslate"> eggs </span> for breakfast.',
+      question: 'Mateo would like to have <span class="wordToTranslate"> eggs </span> for breakfast.',
       options: ['manzanas', 'huevos', 'panqueques'],
       correct: 'huevos'
     },
-
     {
-      question: 'Juan will take the <span class="wordToTranslate"> bus </span> to work.',
+      question: 'Ana speaks English, <span class="wordToTranslate"> Italian </span> and Japanese.',
+      options: ['inglés', 'italiano', 'japonés'],
+      correct: 'italiano'
+    },
+    {
+      question: 'Daniela will take the <span class="wordToTranslate"> bus </span> to work.',
       options: ['bicileta', 'tren', 'autobus'],
       correct: 'autobus'
+    },
+    {
+      question: 'Juan would like to have <span class="wordToTranslate"> chicken </span> for dinner.',
+      options: ['paella', 'pollo', 'gazpacho'],
+      correct: 'pollo'
+    },
+    {
+      question: 'Carlos always wanted to visit <span class="wordToTranslate"> Germany </span>.',
+      options: ['Alemania', 'Francia', 'Dinamarca'],
+      correct: 'Alemania'
+    },
+    {
+      question: 'Carmen eats <span class="wordToTranslate"> bread </span> for breakfast.',
+      options: ['pan', 'pescado', 'yogur'],
+      correct: 'pan'
+    },
+    {
+      question: 'Maria is having <span class="wordToTranslate"> icecream </span> for dessert.',
+      options: ['la helado', 'tarta', 'postre'],
+      correct: 'helado'
+    },
+    {
+      question: 'Isabella is having <span class="wordToTranslate"> icecream </span> for dessert.',
+      options: ['helado', 'tarta', 'postre'],
+      correct: 'helado'
+    },
+    {
+      question: 'Ignacio has three <span class="wordToTranslate"> sisters </span> and one brother.',
+      options: ['hermano', 'abuela', 'hermana'],
+      correct: 'hermana'
+    },
+    {
+      question: 'Esteban is walking to the <span class="wordToTranslate"> school </span>.',
+      options: ['librería', 'escuela', 'estadio'],
+      correct: 'escuela'
     }
   ];
+  $displayLevel.html(level);
 
   function generateQuestion() {
     currentLevel = questionsArray[level]; // currentLevel holds the whole object from the array
@@ -54,18 +96,17 @@ $(() => {
     // store the users choice inside a variable
     if (usersChoice === currentCorrect) {
       // alert('Well done! Now translate the next word!');
-      // instead of pop up put it somewhere else
-      $('.feedback').html('Well done! Now translate the next one!');
-      $('.feedback').delay(2000).fadeOut();
-
+      // WHY ISN'T IT WORKING?!?!?
+      $feedback.html('Well done! Now translate the next one!');
+      $feedback.delay(2000).fadeOut();
       level++;
       // same as level = level + 1
       $displayLevel.html(level);
       generateQuestion();
     } else {
       // alert('Sorry, try again');
-      $('.feedback').html('Sorry, try again');
-      $('.feedback').delay(2000).fadeOut();
+      $feedback.html('Sorry, try again');
+      $feedback.delay(2000).fadeOut();
     }
 
   });
