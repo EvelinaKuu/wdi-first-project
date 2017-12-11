@@ -49,21 +49,14 @@ $(() => {
     // console.log('clicked');
     var usersChoice = event.target.textContent;
     // store the users choice inside a variable
-    if usersChoice === currentCorrect {
-      alert("Well done! Now translate the next word!");
+    if (usersChoice === currentCorrect) {
+      alert('Well done! Now translate the next word!');
+      // how do I add a level in the displayLevel class AND
+      generateQuestion();
+    } else {
+      alert('Sorry, try again');
     }
-    else {
-        alert("Sorry, try again");
-    };
-    // $usersChoice = currentCorrect;
-    // compare the users choice with the currentCorrect variable
 
-    // if (sentences[level].options === sentences[level].correct) {
-    //   alert("Well done! Now translate the next word!");
-    // }
-    //   else {
-    //     alert("Sorry, try again");
-    // }
   });
 
 
