@@ -53,13 +53,19 @@ $(() => {
     var usersChoice = event.target.textContent;
     // store the users choice inside a variable
     if (usersChoice === currentCorrect) {
-      alert('Well done! Now translate the next word!');
+      // alert('Well done! Now translate the next word!');
+      // instead of pop up put it somewhere else
+      $('.feedback').html('Well done! Now translate the next one!');
+      $('.feedback').delay(2000).fadeOut();
+
       level++;
       // same as level = level + 1
       $displayLevel.html(level);
       generateQuestion();
     } else {
-      alert('Sorry, try again');
+      // alert('Sorry, try again');
+      $('.feedback').html('Sorry, try again');
+      $('.feedback').delay(2000).fadeOut();
     }
 
   });
@@ -79,8 +85,11 @@ $(() => {
   //
   $startAgain.on('click', () => {
     level = 0;
+    // storing the value of 0 into the variable level
     $displayLevel.html('0');
+
     generateQuestion();
+    // and then call for the function again and now when I first told the level to be 0 it will start with the first question
   }
 
   );
