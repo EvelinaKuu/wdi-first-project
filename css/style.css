@@ -20,7 +20,7 @@ body {
 .heading {
   color: white;
   background-color: #093E5C;
-  height: 25%;
+  height: 18%;
   display:flex;
   align-items: center;
   justify-content: center;
@@ -51,7 +51,7 @@ div, section {
   /*height: 320px;
   width: 1000px;*/
   background-color: #489BB4;
-  height: 50%;
+  height: 64%;
 }
 
 p {
@@ -83,6 +83,7 @@ p {
   height: 70px;
   width: 170px;
   margin: 0;
+  color: #093E5C;
 
 }
 
@@ -95,7 +96,7 @@ p {
   /*flex-basis: 100%;*/
   background-color: #6BC2A0;
   color: white;
-  height: 25%;
+  height: 18%;
 }
 
 .level {
@@ -110,4 +111,6 @@ p {
   font-size: 20px;
   height: 90px;
   width: 200px;
+  color: #093E5C;
+  
 }
