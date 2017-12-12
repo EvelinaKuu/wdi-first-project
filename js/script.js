@@ -39,7 +39,7 @@ $(() => {
       correct: 'Alemania'
     },
     {
-      question: 'Carmen likes <span class="wordToTranslate"> bread </span> .',
+      question: 'Carmen likes <span class="wordToTranslate"> bread</span>.',
       options: ['el pescado', 'el yogur', 'el pan'],
       correct: 'el pan'
     },
@@ -59,7 +59,7 @@ $(() => {
       correct: 'hermanas'
     },
     {
-      question: 'Esteban is walking to the <span class="wordToTranslate"> school </span>.',
+      question: 'Esteban is walking to the <span class="wordToTranslate"> school</span>.',
       options: ['la librería', 'la escuela', 'el estadio'],
       correct: 'la escuela'
     }
