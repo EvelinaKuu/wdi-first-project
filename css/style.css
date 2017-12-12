@@ -132,5 +132,9 @@ p {
   width: 200px;
   color: white;
   border-color: #093E5C;
+}
 
+button:focus {
+  outline:0;
+  background-color: white;
 }

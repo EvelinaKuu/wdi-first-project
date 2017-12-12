@@ -104,6 +104,9 @@ $(() => {
       level++;
       // same as level = level + 1
       $displayLevel.html(level);
+      if (level === 10) {
+        alert('You win');
+      }
       generateQuestion();
 
       // alert('Well done! Now translate the next word!');
@@ -136,26 +139,10 @@ $(() => {
     level = 0;
     // storing the value of 0 into the variable level
     $displayLevel.html('0');
-
     generateQuestion();
     // and then call for the function again and now when I first told the level to be 0 it will start with the first question
   }
 
   );
-//   function endOfGame() {
-//     if (level === '5');
-//     alert('You win');
-//   }
-//
-//   endOfGame();
-});
 
-//
-// // In the DOM
-// $(() => {
-//
-//   const $choices = $('.button.choices');
-//
-//
-// // make a start again button and an event listener
-// // const $reset = $('.button.reset');
+});
