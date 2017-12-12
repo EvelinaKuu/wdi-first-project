@@ -22,11 +22,6 @@ $(() => {
       correct: 'huevos'
     },
     {
-      question: 'Ana speaks English, <span class="wordToTranslate"> Italian </span> and Japanese.',
-      options: ['inglés', 'italiano', 'japonés'],
-      correct: 'italiano'
-    },
-    {
       question: 'Daniela will take the <span class="wordToTranslate"> bus </span> to work.',
       options: ['la bicileta', 'el tren', 'el autobus'],
       correct: 'el autobus'
@@ -47,14 +42,19 @@ $(() => {
       correct: 'el pan'
     },
     {
+      question: 'Isabella is having <span class="wordToTranslate"> ice cream </span> for dessert.',
+      options: ['helado', 'tarta', 'postre'],
+      correct: 'helado'
+    },
+    {
       question: 'Maria got the <span class="wordToTranslate"> cat </span> when she was living in Spain.',
       options: ['el perro', 'la ardilla', 'el gato'],
       correct: 'el gato'
     },
     {
-      question: 'Isabella is having <span class="wordToTranslate"> ice cream </span> for dessert.',
-      options: ['helado', 'tarta', 'postre'],
-      correct: 'helado'
+      question: 'Esteban is walking to the <span class="wordToTranslate"> school</span>.',
+      options: ['la librería', 'la escuela', 'el estadio'],
+      correct: 'la escuela'
     },
     {
       question: 'Ignacio has three <span class="wordToTranslate"> sisters </span> and one brother.',
@@ -62,9 +62,14 @@ $(() => {
       correct: 'hermanas'
     },
     {
-      question: 'Esteban is walking to the <span class="wordToTranslate"> school</span>.',
-      options: ['la librería', 'la escuela', 'el estadio'],
-      correct: 'la escuela'
+      question: 'Isabella is studying to be a  <span class="wordToTranslate"> chef </span>.',
+      options: ['enfermera', 'cocinero', 'piloto'],
+      correct: 'cocinero'
+    },
+    {
+      question: 'Ana takes <span class="wordToTranslate"> swimming </span> classes.',
+      options: ['de buceo', 'de pintura', 'la natación'],
+      correct: 'la natación'
     }
   ];
   $displayLevel.html(level);
