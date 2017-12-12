@@ -25,8 +25,8 @@ $(() => {
     },
     {
       question: 'Daniela will take the <span class="wordToTranslate"> bus </span> to work.',
-      options: ['bicileta', 'tren', 'autobus'],
-      correct: 'autobus'
+      options: ['la bicileta', 'el tren', 'el autobus'],
+      correct: 'el autobus'
     },
     {
       question: 'Juan would like to have <span class="wordToTranslate"> chicken </span> for dinner.',
@@ -39,9 +39,9 @@ $(() => {
       correct: 'Alemania'
     },
     {
-      question: 'Carmen eats <span class="wordToTranslate"> bread </span> for breakfast.',
-      options: ['pescado', 'yogur', 'pan'],
-      correct: 'pan'
+      question: 'Carmen likes <span class="wordToTranslate"> bread </span> .',
+      options: ['el pescado', 'el yogur', 'el pan'],
+      correct: 'el pan'
     },
     // {
     //   question: 'Maria is having <span class="wordToTranslate"> icecream </span> for dessert.',
@@ -55,13 +55,13 @@ $(() => {
     // },
     {
       question: 'Ignacio has three <span class="wordToTranslate"> sisters </span> and one brother.',
-      options: ['hermano', 'abuela', 'hermana'],
-      correct: 'hermana'
+      options: ['hermanos', 'abuelas', 'hermanas'],
+      correct: 'hermanas'
     },
     {
       question: 'Esteban is walking to the <span class="wordToTranslate"> school </span>.',
-      options: ['librería', 'escuela', 'estadio'],
-      correct: 'escuela'
+      options: ['la librería', 'la escuela', 'el estadio'],
+      correct: 'la escuela'
     }
   ];
   $displayLevel.html(level);
@@ -134,12 +134,12 @@ $(() => {
   }
 
   );
-  function endOfGame() {
-    if (level === '5');
-    alert('You win');
-  }
-
-  endOfGame();
+//   function endOfGame() {
+//     if (level === '5');
+//     alert('You win');
+//   }
+//
+//   endOfGame();
 });
 
 //
