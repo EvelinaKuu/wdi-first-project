@@ -8,7 +8,6 @@ $(() => {
   const $startAgain = $('.startAgain');
   const $feedback = $('.feedback');
   const $popup = $('.popup');
-  const $star = $('.star');
   const $fromWinStartAgain = $('.fromWinStartAgain');
   let level = 0;
   let currentLevel = null;
