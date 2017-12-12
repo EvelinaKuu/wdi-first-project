@@ -114,11 +114,11 @@ p {
 }
 
 .startAgain {
-  background-color: white;
+  background-color: #093E5C;
   font-family: 'Krona One', sans-serif;
   font-size: 20px;
-  height: 80px;
+  height: 70px;
   width: 200px;
-  color: #093E5C;
+  color: white;
 
 }
