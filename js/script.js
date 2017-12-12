@@ -52,7 +52,7 @@ $(() => {
       correct: 'el gato'
     },
     {
-      question: 'Isabella is having <span class="wordToTranslate"> icecream </span> for dessert.',
+      question: 'Isabella is having <span class="wordToTranslate"> ice cream </span> for dessert.',
       options: ['helado', 'tarta', 'postre'],
       correct: 'helado'
     },
