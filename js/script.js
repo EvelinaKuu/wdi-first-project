@@ -115,7 +115,7 @@ $(() => {
       $feedback.html('Sorry, try again');
       //$feedback.delay(2000).fadeOut();
       $feedback.fadeIn(function(){
-        $feedback.delay(2000).fadeOut();
+        $feedback.delay(1000).fadeOut();
       });
     }
   });
