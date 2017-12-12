@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+@import url('https://fonts.googleapis.com/css?family=Krona+One');
+
 /** {
     border: 1px solid black;
 }*/
@@ -28,12 +30,12 @@ body {
 }
 
 h1 {
-  font-family: "Merriweather", serif;
-  font-size: 50px;
+  font-family: 'Krona One', sans-serif;
+  font-size: 40px;
 }
 
 div, section {
-  font-family: "Merriweather", serif;
+  font-family: 'Krona One', sans-serif;
   font-size: 25px;
 }
  /*how do I combain these two?*/
@@ -77,7 +79,7 @@ p {
 
 .option {
   justify-content: space-between;
-  font-family: "Merriweather", serif;
+  font-family: 'Krona One', sans-serif;
   font-size: 22px;
   height: 70px;
   width: 170px;
@@ -106,16 +108,16 @@ p {
 }
 
 .level {
-  font-family: "Merriweather", serif;
+  font-family: 'Krona One', sans-serif;
   font-size: 20px;
 
 }
 
 .startAgain {
   background-color: white;
-  font-family: "Merriweather", serif;
+  font-family: 'Krona One', sans-serif;
   font-size: 20px;
-  height: 90px;
+  height: 80px;
   width: 200px;
   color: #093E5C;
 
