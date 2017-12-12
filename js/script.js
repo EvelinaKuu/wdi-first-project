@@ -99,7 +99,7 @@ $(() => {
       $feedback.html('Well done! Now translate the next word!');
       //$feedback.delay(2000).fadeOut();
       $feedback.fadeIn(function(){
-        $feedback.delay(2000).fadeOut();
+        $feedback.delay(1900).fadeOut();
       });
       level++;
       // same as level = level + 1
