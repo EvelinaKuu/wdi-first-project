@@ -4,6 +4,18 @@
 /** {
     border: 1px solid black;
 }*/
+.popup {
+  display: none;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  height: 500px;
+  background-color: yellow;
+}
 
 body {
   font-size: 18px;
@@ -95,7 +107,7 @@ p {
   justify-content: center;
   text-align: center;
   height: 200px;
-  width: 966px;
+  width: 100%;
 
 }
 
@@ -134,7 +146,23 @@ p {
   border-color: #093E5C;
 }
 
-button:focus {
-  outline:0;
-  background-color: white;
+button:active {
+  border: 0;
+  background-color: #489BB4;
+  box-shadow: 0;
 }
+
+button:focus {
+  outline:0 !important;
+}
+
+/*button:active {
+outline: none;
+border: none;
+}*/
+
+/*button:active {
+ outline:0;
+ background-color: #489BB4;
+ border-color: #489BB4;
+}*/

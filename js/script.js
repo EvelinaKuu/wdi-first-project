@@ -7,6 +7,7 @@ $(() => {
   const $displayLevel = $('.displayLevel');
   const $startAgain = $('.startAgain');
   const $feedback = $('.feedback');
+  const $popup = $('.popup');
   let level = 0;
   let currentLevel = null;
   let currentCorrect = null;
@@ -105,7 +106,7 @@ $(() => {
       // same as level = level + 1
       $displayLevel.html(level);
       if (level === 10) {
-        alert('You win');
+        $popup.show();
       }
       generateQuestion();
 
