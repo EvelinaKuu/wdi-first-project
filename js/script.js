@@ -15,7 +15,7 @@ $(() => {
   const questionsArray = [
     {
       question: 'Mateo would like to have <span class="wordToTranslate"> eggs </span> for breakfast.',
-      options: ['manzanas', 'huevos', 'panqueques'],
+      options: ['manzanas', 'huevos', 'piña'],
       correct: 'huevos'
     },
     {
@@ -43,16 +43,16 @@ $(() => {
       options: ['el pescado', 'el yogur', 'el pan'],
       correct: 'el pan'
     },
-    // {
-    //   question: 'Maria is having <span class="wordToTranslate"> icecream </span> for dessert.',
-    //   options: ['la helado', 'tarta', 'postre'],
-    //   correct: 'helado'
-    // },
-    // {
-    //   question: 'Isabella is having <span class="wordToTranslate"> icecream </span> for dessert.',
-    //   options: ['helado', 'tarta', 'postre'],
-    //   correct: 'helado'
-    // },
+    {
+      question: 'Maria got the <span class="wordToTranslate"> cat </span> when she was living in Spain.',
+      options: ['el perro', 'la ardilla', 'el gato'],
+      correct: 'el gato'
+    },
+    {
+      question: 'Isabella is having <span class="wordToTranslate"> icecream </span> for dessert.',
+      options: ['helado', 'tarta', 'postre'],
+      correct: 'helado'
+    },
     {
       question: 'Ignacio has three <span class="wordToTranslate"> sisters </span> and one brother.',
       options: ['hermanos', 'abuelas', 'hermanas'],
@@ -95,22 +95,30 @@ $(() => {
     var usersChoice = event.target.textContent;
     // store the users choice inside a variable
     if (usersChoice === currentCorrect) {
-      alert('Well done! Now translate the next word!');
-      // WHY ISN'T IT WORKING?!?!?
-      // $feedback.html('Well done! Now translate the next one!');
-      // $feedback.delay(2000).fadeOut();
+      $feedback.hide();
+      $feedback.html('Well done! Now translate the next word!');
+      //$feedback.delay(2000).fadeOut();
+      $feedback.fadeIn(function(){
+        $feedback.delay(2000).fadeOut();
+      });
       level++;
       // same as level = level + 1
       $displayLevel.html(level);
       generateQuestion();
-    } else {
-      alert('Sorry, try again');
-      // $feedback.html('Sorry, try again');
+
+      // alert('Well done! Now translate the next word!');
+      // WHY ISN'T IT WORKING?!?!?
+      // $feedback.html('Well done! Now translate the next one!');
       // $feedback.delay(2000).fadeOut();
+    } else {
+      $feedback.hide();
+      $feedback.html('Sorry, try again');
+      //$feedback.delay(2000).fadeOut();
+      $feedback.fadeIn(function(){
+        $feedback.delay(2000).fadeOut();
+      });
     }
-
   });
-
 
   // function determineAnswer {
   //
