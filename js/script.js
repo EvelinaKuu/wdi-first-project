@@ -95,18 +95,18 @@ $(() => {
     var usersChoice = event.target.textContent;
     // store the users choice inside a variable
     if (usersChoice === currentCorrect) {
-      // alert('Well done! Now translate the next word!');
+      alert('Well done! Now translate the next word!');
       // WHY ISN'T IT WORKING?!?!?
-      $feedback.html('Well done! Now translate the next one!');
-      $feedback.delay(2000).fadeOut();
+      // $feedback.html('Well done! Now translate the next one!');
+      // $feedback.delay(2000).fadeOut();
       level++;
       // same as level = level + 1
       $displayLevel.html(level);
       generateQuestion();
     } else {
-      // alert('Sorry, try again');
-      $feedback.html('Sorry, try again');
-      $feedback.delay(2000).fadeOut();
+      alert('Sorry, try again');
+      // $feedback.html('Sorry, try again');
+      // $feedback.delay(2000).fadeOut();
     }
 
   });
@@ -135,8 +135,8 @@ $(() => {
 
   );
   function endOfGame() {
-    level === 9;
-
+    if (level === '5');
+    alert('You win');
   }
 
   endOfGame();
