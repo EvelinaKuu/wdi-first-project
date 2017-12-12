@@ -14,14 +14,37 @@
   bottom: 0;
   z-index: 999;
   height: 80vh;
-  /*height: 500px;*/
   background-color: white;
 }
 
-.star {
+#star {
   display: none;
-  content:url(https://pixabay.com/get/e83cb10e2dfc093ed1534705fb0938c9bd22ffd41cb012419cf4c27ea2/star-1901588_1920.png);
+  display:flex;
+  background-image: url('https://pixabay.com/get/e83cb10e2dfc093ed1534705fb0938c9bd22ffd41cb012419cf4c27ea2/star-1901588_1920.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  height: 100vh;
+
 }
+
+#star p {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 50px;
+}
+
+.fromWinStartAgain {
+  background-color: #093E5C;
+  font-family: 'Krona One', sans-serif;
+  font-size: 20px;
+  height: 70px;
+  width: 200px;
+  color: white;
+  border-color: #093E5C;
+}
+
 
 body {
   font-size: 18px;

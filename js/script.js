@@ -9,9 +9,11 @@ $(() => {
   const $feedback = $('.feedback');
   const $popup = $('.popup');
   const $star = $('.star');
+  const $fromWinStartAgain = $('.fromWinStartAgain');
   let level = 0;
   let currentLevel = null;
   let currentCorrect = null;
+
 
 
   const questionsArray = [
@@ -108,7 +110,16 @@ $(() => {
       $displayLevel.html(level);
       if (level === 10) {
         $popup.show();
-        $star.show();
+        $popup.delay(20000).fadeIn();
+        $fromWinStartAgain.on('click', () => {
+          level = 0;
+          // storing the value of 0 into the variable level
+          $displayLevel.html('0');
+          generateQuestion();
+          // and then call for the function again and now when I first told the level to be 0 it will start with the first question
+        }
+
+        );
       }
       generateQuestion();
 
