@@ -8,6 +8,7 @@ $(() => {
   const $startAgain = $('.startAgain');
   const $feedback = $('.feedback');
   const $popup = $('.popup');
+  const $star = $('.star');
   let level = 0;
   let currentLevel = null;
   let currentCorrect = null;
@@ -107,6 +108,7 @@ $(() => {
       $displayLevel.html(level);
       if (level === 10) {
         $popup.show();
+        $star.show();
       }
       generateQuestion();
 

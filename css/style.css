@@ -13,8 +13,14 @@
   right: 0;
   bottom: 0;
   z-index: 999;
-  height: 500px;
-  background-color: yellow;
+  height: 80vh;
+  /*height: 500px;*/
+  background-color: white;
+}
+
+.star {
+  display: none;
+  content:url(https://pixabay.com/get/e83cb10e2dfc093ed1534705fb0938c9bd22ffd41cb012419cf4c27ea2/star-1901588_1920.png);
 }
 
 body {
@@ -146,13 +152,23 @@ p {
   border-color: #093E5C;
 }
 
-button:active {
+.choices button:active {
   border: 0;
   background-color: #489BB4;
   box-shadow: 0;
 }
 
-button:focus {
+.choices button:focus {
+  outline:0 !important;
+}
+
+.endOfPage button:active {
+  border: 0;
+  background-color: #6BC2A0;
+  box-shadow: 0;
+}
+
+.endOfPage button:focus {
   outline:0 !important;
 }
 
