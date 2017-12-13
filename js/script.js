@@ -10,6 +10,7 @@ $(() => {
   const $spanish = $('#spanish');
   const $norwegian = $('#norwegian');
   const $swedish = $('#swedish');
+  const $randomLanguages = $('#randomLanguages');
   let level = 0;
   let currentLevel = null;
   let currentCorrect = null;
@@ -48,8 +49,8 @@ $(() => {
       },
       {
         question: 'Carmen likes <span class="wordToTranslate"> bread</span>.',
-        options: ['el pescado', 'el yogur', 'el pan'],
-        correct: 'el pan'
+        options: ['pescado', 'yogur', 'pan'],
+        correct: 'pan'
       },
       {
         question: 'Isabella is having <span class="wordToTranslate"> ice cream </span> for dessert.',
@@ -97,7 +98,7 @@ $(() => {
       {
         question: 'Barbro always wanted to visit <span class="wordToTranslate">  </span>.',
         options: ['pyramidene', 'moskeen', 'nordpolen'],
-        correct: ''
+        correct: 'moskeen'
       },
       {
         question: 'Anita has <span class="wordToTranslate"> porridge </span> for breakfast.',
@@ -210,8 +211,76 @@ $(() => {
     $instructionWindow.hide();
     generateQuestion();
   });
-  // $instructionWindow.hide;
-  // OR $instructionWindow.display: 'none';
+
+  $randomLanguages.on('click', () => {
+
+    questionsArray = [
+      {
+        question: 'Ellen likes <span class="wordToTranslate"> strawberries </span> and blueberries.',
+        options: ['blåbär', 'jordgubbar', 'hallon'],
+        correct: 'jordgubbar'
+      },
+      {
+        question: 'Gunnar will take the <span class="wordToTranslate"> bus </span> to work.',
+        options: ['bussen', 'tåget', 'cykeln'],
+        correct: 'bussen'
+      },
+      {
+        question: 'Barbro always wanted to visit <span class="wordToTranslate"> Germany </span>.',
+        options: ['Danmark', 'Tyskland', 'Finland'],
+        correct: 'Tyskland'
+      },
+      {
+        question: 'Per would like to have <span class="wordToTranslate"> fish </span> for dinner.',
+        options: ['soppa', 'kyckling', 'fisk'],
+        correct: 'fisk'
+      },
+      {
+        question: 'Christoffer got the <span class="wordToTranslate"> cat </span> when she was living in Malmö.',
+        options: ['musen', 'hunden', 'katten'],
+        correct: 'katten'
+      },
+      {
+        question: 'Elin is having <span class="wordToTranslate"> ice cream </span> for dessert.',
+        options: ['glass', 'tårta', 'kaka'],
+        correct: 'glass'
+      },
+      {
+        question: 'Malin is going to the <span class="wordToTranslate"> airport </span>.',
+        options: ['flygplatsen', 'biblioteket', 'simhallen'],
+        correct: 'flygplatsen'
+      },
+      {
+        question: 'Filip has three <span class="wordToTranslate"> uncles </span> and one brother.',
+        options: ['morbröder', 'kusiner', 'bröder'],
+        correct: 'morbröder'
+      },
+      {
+        question: 'Åsa will travel to the  <span class="wordToTranslate"> countryside </span>.',
+        options: ['staden', 'havet', 'landet'],
+        correct: 'landet'
+      },
+      {
+        question: 'Karl takes <span class="wordToTranslate"> self defence </span> classes.',
+        options: ['självförsvar', 'fotografering', 'målning'],
+        correct: 'självförsvar'
+      },
+      {
+        question: 'Ingrid will study to be a <span class="wordToTranslate"> chef </span> in fall.',
+        options: ['servitris', 'kock', 'chef'],
+        correct: 'kock'
+      }
+    ];
+    for (let i = 0; i < questionsArray.length; i++) {
+      const randomArray = [];
+      randomArray.push(questionsArray[Math.floor(Math.random() * 10)]);
+      console.log(randomArray);
+    }
+    // console.log(randomArray);
+
+    $instructionWindow.hide();
+    generateQuestion();
+  });
 
   $displayLevel.html(level);
 
