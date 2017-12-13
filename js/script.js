@@ -13,7 +13,19 @@ $(() => {
   let currentLevel = null;
   let currentCorrect = null;
 
+  const $instructionWindow = $('.instructionWindow');
+  const $language = $('.language');
+  const $spanish = $('#spanish');
+  const $norwegian = $('#norwegian');
+  const $swedish = $('#swedish');
 
+$(document).ready(function() {
+  $instructionWindow.show;
+  $language.on('click', function (event) {
+
+
+
+)};
 
   const questionsArray = [
     {
