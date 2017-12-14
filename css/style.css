@@ -28,7 +28,7 @@
   color: white;
   flex-direction: row;
   background-color: #093E5C;
-  margin-top: 30px;
+  margin-top: 0;
   margin-bottom: 30px;
   height: 20%;
 }
@@ -53,11 +53,26 @@
   background-color: #093E5C;
   font-family: 'Lato', sans-serif;
   font-size: 20px;
-  height: 70px;
-  width: 150px;
+  height: 50px;
+  width: 105px;
+  margin: 0;
   color: white;
-  border-color: #093E5C;
+  border-color:  #093E5C;
+  text-align: center;
+  justify-content: space-around;
 }
+
+
+.language button:active {
+  border: 0;
+  background-color: #489BB4;
+  box-shadow: 0;
+}
+
+.language button:focus {
+  outline:0 !important;
+}
+
 
 
 body {
@@ -76,7 +91,7 @@ body {
 .heading {
   color: white;
   background-color: #093E5C;
-  height: 18%;
+  height: 20%;
   display:flex;
   align-items: center;
   justify-content: center;
@@ -135,6 +150,17 @@ p {
   border-color:  #093E5C;
 }
 
+.choices button:active {
+  border: 0;
+  background-color: #489BB4;
+  box-shadow: 0;
+}
+
+.choices button:focus {
+  outline:0 !important;
+}
+
+
 .feedbackSentence {
   display: flex;
   justify-content: center;
@@ -177,16 +203,6 @@ p {
   width: 200px;
   color: white;
   border-color: #093E5C;
-}
-
-.choices button:active {
-  border: 0;
-  background-color: #489BB4;
-  box-shadow: 0;
-}
-
-.choices button:focus {
-  outline:0 !important;
 }
 
 .endOfPage button:active {

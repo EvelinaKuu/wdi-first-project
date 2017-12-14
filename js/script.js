@@ -73,23 +73,23 @@ $(() => {
   const finnishQuestions =   [
     {
       question: 'Hilkka always wanted to visit <span class="wordToTranslate"> Germany </span>.',
-      options: ['Tanskaan', 'Saksaan', 'Ruotsiin'],
-      correct: 'Saksaan'
+      options: ['Tanska', 'Saksa', 'Ruotsi'],
+      correct: 'Saksa'
     },
     {
-      question: 'Maija likes <span class="wordToTranslate"> the beach </span> and blueberries.',
-      options: ['rannasta', 'puistosta', 'metsästä'],
-      correct: 'rannasta'
+      question: 'Maija likes the <span class="wordToTranslate"> beach </span>.',
+      options: ['ranta', 'puisto', 'metsä'],
+      correct: 'ranta'
     },
     {
       question: 'Eino will visit his  <span class="wordToTranslate"> granmother </span> tonight.',
-      options: ['papan', 'äidin', 'mummon'],
-      correct: 'mummon'
+      options: ['pappa', 'äiti', 'mummo'],
+      correct: 'mummo'
     },
     {
       question: 'Antti would like to have <span class="wordToTranslate"> fish </span> for dinner.',
-      options: ['kalaa', 'kanaa', 'keittoa'],
-      correct: 'kalaa'
+      options: ['kala', 'kana', 'keitto'],
+      correct: 'kala'
     },
     {
       question: 'Inkeri has a  <span class="wordToTranslate"> cat </span>.',
@@ -98,28 +98,28 @@ $(() => {
     },
     {
       question: 'Mikko is having <span class="wordToTranslate"> porridge </span> for breakfast.',
-      options: ['hedelmiä', 'leipää', 'puuroa'],
-      correct: 'puuroa'
+      options: ['hedelmä', 'leipä', 'puuro'],
+      correct: 'puuro'
     },
     {
       question: 'Antti is going to the <span class="wordToTranslate"> station </span>.',
-      options: ['asemalle', 'kouluun', 'museoon'],
-      correct: 'asemalle'
+      options: ['asema', 'koulu', 'museo'],
+      correct: 'asema'
     },
     {
       question: 'Saku has three <span class="wordToTranslate"> sisters </span> and one brother.',
-      options: ['siskoa', 'veljeä', 'serkkua'],
-      correct: 'siskoa'
+      options: ['sisko', 'veli', 'serkku'],
+      correct: 'sisko'
     },
     {
       question: 'Piia will have a <span class="wordToTranslate"> beer </span> after sauna.',
-      options: ['leivän', 'oluen', 'juoman'],
-      correct: 'oluen'
+      options: ['leipä', 'olut', 'juoma'],
+      correct: 'olut'
     },
     {
-      question: 'Eila loves to take a walk <span class="wordToTranslate"> in the forest </span> .',
-      options: ['merellä', 'rannalla', 'metsässä'],
-      correct: 'metsässä'
+      question: 'Eila loves to take a walk in the <span class="wordToTranslate"> forest </span> .',
+      options: ['meri', 'ranta', 'metsä'],
+      correct: 'metsä'
     },
     {
       question: 'Jani is working as a <span class="wordToTranslate"> teacher </span> .',
@@ -131,12 +131,12 @@ $(() => {
     {
       question: 'Anna is buying new <span class="wordToTranslate"> shoes </span>.',
       options: ['bukser', 'sokker', 'sko'],
-      correct: 'sokker'
+      correct: 'sko'
     },
     {
-      question: 'Håkon goes <span class="wordToTranslate"> diving </span> in the summer time.',
-      options: ['dykking', 'seiling', 'fisker'],
-      correct: 'dykking'
+      question: 'Håkon enjoys the <span class="wordToTranslate"> forests </span> in the summer time.',
+      options: ['skogene', 'hav', 'fjord'],
+      correct: 'skogene'
     },
     {
       question: 'Anita has <span class="wordToTranslate"> porridge </span> for breakfast.',
@@ -145,8 +145,13 @@ $(() => {
     },
     {
       question: 'Alf will take the <span class="wordToTranslate"> car </span> to work.',
-      options: ['bilen', 'toget', 'sykkelen'],
-      correct: 'bilen'
+      options: ['bil', 'tog', 'sykkel'],
+      correct: 'bil'
+    },
+    {
+      question: 'Barbro loves <span class="wordToTranslate"> flowers </span>.',
+      options: ['dyr', 'blomster', 'mat'],
+      correct: 'blomster'
     },
     {
       question: 'Britt is studying to be a <span class="wordToTranslate"> nurse </span> .',
@@ -155,18 +160,13 @@ $(() => {
     },
     {
       question: 'Knut got the <span class="wordToTranslate"> snake </span> when she was living in Trondheim.',
-      options: ['slangen', 'hesten', 'kaninen'],
-      correct: 'slangen'
-    },
-    {
-      question: 'Barbro always wanted to do <span class="wordToTranslate"> gardening </span>.',
-      options: ['hagearbeid', 'håndverk', 'sport'],
-      correct: 'hagearbeid'
+      options: ['slange', 'hest', 'kanin'],
+      correct: 'slange'
     },
     {
       question: 'Magnus is going to the <span class="wordToTranslate"> office </span>.',
-      options: ['sykehuset', 'kontoret', 'flyplassen'],
-      correct: 'kontoret'
+      options: ['sykehus', 'kontor', 'flyplass'],
+      correct: 'kontor'
     },
     {
       question: 'Bodil has three <span class="wordToTranslate"> aunts </span> and one uncle.',
@@ -187,8 +187,8 @@ $(() => {
   const swedishQuestions = [
     {
       question: 'Gunnar will take the <span class="wordToTranslate"> bus </span> to work.',
-      options: ['bussen', 'tåget', 'cykeln'],
-      correct: 'bussen'
+      options: ['buss', 'tåg', 'cykel'],
+      correct: 'buss'
     },
     {
       question: 'Ellen likes <span class="wordToTranslate"> strawberries </span> and blueberries.',
@@ -198,7 +198,8 @@ $(() => {
     {
       question: 'Barbro always wanted to visit <span class="wordToTranslate"> Germany </span>.',
       options: ['Danmark', 'Tyskland', 'Finland'],
-      correct: 'Tyskland'            },
+      correct: 'Tyskland'
+    },
     {
       question: 'For <span class="wordToTranslate"> dinner </span> the Lindströms are having pasta.',
       options: ['middag', 'lunch', 'fika'],
@@ -206,8 +207,8 @@ $(() => {
     },
     {
       question: 'Christoffer got the <span class="wordToTranslate"> bird </span> when she was living in Malmö.',
-      options: ['musen', 'hunden', 'fågeln'],
-      correct: 'fågeln'
+      options: ['mus', 'hund', 'fågel'],
+      correct: 'fågel'
     },
     {
       question: 'Elin is having <span class="wordToTranslate"> ice cream </span> for dessert.',
@@ -216,8 +217,8 @@ $(() => {
     },
     {
       question: 'Malin is going to the <span class="wordToTranslate"> airport </span>.',
-      options: ['flygplatsen', 'biblioteket', 'simhallen'],
-      correct: 'flygplatsen'
+      options: ['flygplats', 'bibliotek', 'simhall'],
+      correct: 'flygplats'
     },
     {
       question: 'Filip has three <span class="wordToTranslate"> uncles </span> and one brother.',
@@ -226,8 +227,8 @@ $(() => {
     },
     {
       question: 'Åsa will travel to the  <span class="wordToTranslate"> city </span>.',
-      options: ['staden', 'havet', 'stugan'],
-      correct: 'staden'
+      options: ['stad', 'hav', 'stuga'],
+      correct: 'stad'
     },
     {
       question: 'Karl takes <span class="wordToTranslate"> self defence </span> classes.',
