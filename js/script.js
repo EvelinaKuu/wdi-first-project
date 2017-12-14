@@ -8,6 +8,7 @@ $(() => {
   const $fromWinStartAgain = $('.fromWinStartAgain');
   const $instructionWindow = $('.instructionWindow');
   const $spanish = $('#spanish');
+  const $finnish = $('#finnish');
   const $norwegian = $('#norwegian');
   const $swedish = $('#swedish');
   const $randomLanguages = $('#randomLanguages');
@@ -66,6 +67,64 @@ $(() => {
       question: 'Ana takes <span class="wordToTranslate"> swimming </span> classes.',
       options: ['de buceo', 'de pintura', 'la natación'],
       correct: 'la natación'
+    }
+  ];
+
+  const finnishQuestions =   [
+    {
+      question: 'Hilkka always wanted to visit <span class="wordToTranslate"> Germany </span>.',
+      options: ['Tanskaan', 'Saksaan', 'Ruotsiin'],
+      correct: 'Saksaan'
+    },
+    {
+      question: 'Maija likes <span class="wordToTranslate"> the beach </span> and blueberries.',
+      options: ['rannasta', 'puistosta', 'metsästä'],
+      correct: 'rannasta'
+    },
+    {
+      question: 'Eino will visit his  <span class="wordToTranslate"> granmother </span> tonight.',
+      options: ['papan', 'äidin', 'mummon'],
+      correct: 'mummon'
+    },
+    {
+      question: 'Antti would like to have <span class="wordToTranslate"> fish </span> for dinner.',
+      options: ['kalaa', 'kanaa', 'keittoa'],
+      correct: 'kalaa'
+    },
+    {
+      question: 'Inkeri has a  <span class="wordToTranslate"> cat </span>.',
+      options: ['hamsteri', 'koira', 'kissa'],
+      correct: 'kissa'
+    },
+    {
+      question: 'Mikko is having <span class="wordToTranslate"> porridge </span> for breakfast.',
+      options: ['hedelmiä', 'leipää', 'puuroa'],
+      correct: 'puuroa'
+    },
+    {
+      question: 'Antti is going to the <span class="wordToTranslate"> station </span>.',
+      options: ['asemalle', 'kouluun', 'museoon'],
+      correct: 'asemalle'
+    },
+    {
+      question: 'Saku has three <span class="wordToTranslate"> sisters </span> and one brother.',
+      options: ['siskoa', 'veljeä', 'serkkua'],
+      correct: 'siskoa'
+    },
+    {
+      question: 'Piia will have a <span class="wordToTranslate"> beer </span> after sauna.',
+      options: ['leivän', 'oluen', 'juoman'],
+      correct: 'oluen'
+    },
+    {
+      question: 'Eila loves to take a walk <span class="wordToTranslate"> in the forest </span> .',
+      options: ['merellä', 'rannalla', 'metsässä'],
+      correct: 'metsässä'
+    },
+    {
+      question: 'Jani is working as a <span class="wordToTranslate"> teacher </span> .',
+      options: ['kuljettaja', 'opettaja', 'kätilö'],
+      correct: 'opettaja'
     }
   ];
   const norwegianQuestions = [
@@ -202,6 +261,13 @@ $(() => {
     generateQuestion();
   });
 
+  $finnish.on('click', () => {
+    questionsArray = finnishQuestions;
+    $instructionWindow.hide();
+    generateQuestion();
+  });
+
+
   $norwegian.on('click', () => {
     // if (usersChoiceOfLanguage === $norwegian) {
     questionsArray = norwegianQuestions;
@@ -219,7 +285,7 @@ $(() => {
 
   $randomLanguages.on('click', () => {
     questionsArray = [];
-    const allQuestions = spanishQuestions.concat(swedishQuestions).concat(norwegianQuestions);
+    const allQuestions = spanishQuestions.concat(swedishQuestions).concat(norwegianQuestions).concat(finnishQuestions);
     for (let i = 0; i < 11; i++) {
       questionsArray.push(allQuestions.splice(Math.floor(Math.random() * allQuestions.length),1)[0]);
     }
