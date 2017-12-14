@@ -5,7 +5,7 @@ $(() => {
   const $startAgain = $('.startAgain');
   const $feedback = $('.feedback');
   const $popup = $('.popup');
-  const $fromWinStartAgain = $('.fromWinStartAgain');
+  const $starContainer = $('.starContainer');
   const $instructionWindow = $('.instructionWindow');
   const $spanish = $('#spanish');
   const $finnish = $('#finnish');
@@ -82,7 +82,7 @@ $(() => {
       correct: 'ranta'
     },
     {
-      question: 'Eino will visit his  <span class="wordToTranslate"> granmother </span> tonight.',
+      question: 'Eino will visit his  <span class="wordToTranslate"> grandmother </span> tonight.',
       options: ['pappa', 'äiti', 'mummo'],
       correct: 'mummo'
     },
@@ -272,7 +272,6 @@ $(() => {
   $norwegian.on('click', () => {
     // if (usersChoiceOfLanguage === $norwegian) {
     questionsArray = norwegianQuestions;
-
     $instructionWindow.hide();
     generateQuestion();
   });
@@ -338,14 +337,10 @@ $(() => {
       // same as level = level + 1
       $displayLevel.html(level);
       if (level === 10) {
-        $popup.show();
+        $popup.css('display', 'flex');
         // $popup.delay(20000).fadeIn();
-        $fromWinStartAgain.on('click', () => {
-          level = 0;
-          // storing the value of 0 into the variable level
-          $displayLevel.html('0');
-          generateQuestion();
-          // and then call for the function again and now when I first told the level to be 0 it will start with the first question
+        $starContainer.on('click', () => {
+          location.reload();
         });
       }
       generateQuestion();
