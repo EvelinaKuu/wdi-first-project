@@ -13,24 +13,19 @@ $(() => {
   const $randomLanguages = $('#randomLanguages');
   const spanishQuestions = [
     {
-      question: 'Mateo would like to have <span class="wordToTranslate"> eggs </span> for breakfast.',
-      options: ['manzanas', 'huevos', 'piña'],
-      correct: 'huevos'
-    },
-    {
       question: 'Daniela will take the <span class="wordToTranslate"> bus </span> to work.',
       options: ['la bicileta', 'el tren', 'el autobus'],
       correct: 'el autobus'
     },
     {
+      question: 'Mateo would like to have <span class="wordToTranslate"> eggs </span> for breakfast.',
+      options: ['manzanas', 'huevos', 'piña'],
+      correct: 'huevos'
+    },
+    {
       question: 'Juan would like to have <span class="wordToTranslate"> chicken </span> for dinner.',
       options: ['paella', 'pollo', 'gazpacho'],
       correct: 'pollo'
-    },
-    {
-      question: 'Carlos always wanted to visit <span class="wordToTranslate"> Germany </span>.',
-      options: ['Alemania', 'Francia', 'Dinamarca'],
-      correct: 'Alemania'
     },
     {
       question: 'Carmen likes <span class="wordToTranslate"> bread</span>.',
@@ -46,6 +41,11 @@ $(() => {
       question: 'Maria got the <span class="wordToTranslate"> cat </span> when she was living in Spain.',
       options: ['el perro', 'la ardilla', 'el gato'],
       correct: 'el gato'
+    },
+    {
+      question: 'Carlos always wanted to visit <span class="wordToTranslate"> Germany </span>.',
+      options: ['Alemania', 'Francia', 'Dinamarca'],
+      correct: 'Alemania'
     },
     {
       question: 'Esteban is walking to the <span class="wordToTranslate"> school</span>.',
@@ -70,14 +70,14 @@ $(() => {
   ];
   const norwegianQuestions = [
     {
-      question: 'Anna would like to have <span class="wordToTranslate"> fish </span> for dinner.',
-      options: ['skinke', 'pai', 'fisk'],
-      correct: 'fisk'
+      question: 'Anna is buying new <span class="wordToTranslate"> shoes </span>.',
+      options: ['bukser', 'sokker', 'sko'],
+      correct: 'sokker'
     },
     {
-      question: 'Barbro always wanted to visit <span class="wordToTranslate"> mosque </span>.',
-      options: ['pyramidene', 'moskeen', 'nordpolen'],
-      correct: 'moskeen'
+      question: 'Håkon goes <span class="wordToTranslate"> diving </span> in the summer time.',
+      options: ['dykking', 'seiling', 'fisker'],
+      correct: 'dykking'
     },
     {
       question: 'Anita has <span class="wordToTranslate"> porridge </span> for breakfast.',
@@ -85,9 +85,9 @@ $(() => {
       correct: 'grøt'
     },
     {
-      question: 'Alf will take the <span class="wordToTranslate"> bus </span> to work.',
-      options: ['bussen', 'toget', 'sykkelen'],
-      correct: 'bussen'
+      question: 'Alf will take the <span class="wordToTranslate"> car </span> to work.',
+      options: ['bilen', 'toget', 'sykkelen'],
+      correct: 'bilen'
     },
     {
       question: 'Britt is studying to be a <span class="wordToTranslate"> nurse </span> .',
@@ -95,14 +95,14 @@ $(() => {
       correct: 'sykepleier'
     },
     {
-      question: 'Knut got the <span class="wordToTranslate"> cat </span> when she was living in Trondheim.',
-      options: ['musen', 'hunden', 'katten'],
-      correct: 'katten'
+      question: 'Knut got the <span class="wordToTranslate"> snake </span> when she was living in Trondheim.',
+      options: ['slangen', 'hesten', 'kaninen'],
+      correct: 'slangen'
     },
     {
-      question: 'Håkon goes <span class="wordToTranslate"> diving </span> in the summer time.',
-      options: ['dykking', 'seiling', 'fisker'],
-      correct: 'dykking'
+      question: 'Barbro always wanted to do <span class="wordToTranslate"> gardening </span>.',
+      options: ['hagearbeid', 'håndverk', 'sport'],
+      correct: 'hagearbeid'
     },
     {
       question: 'Magnus is going to the <span class="wordToTranslate"> office </span>.',
@@ -127,28 +127,28 @@ $(() => {
   ];
   const swedishQuestions = [
     {
-      question: 'Ellen likes <span class="wordToTranslate"> strawberries </span> and blueberries.',
-      options: ['blåbär', 'jordgubbar', 'hallon'],
-      correct: 'jordgubbar'
-    },
-    {
       question: 'Gunnar will take the <span class="wordToTranslate"> bus </span> to work.',
       options: ['bussen', 'tåget', 'cykeln'],
       correct: 'bussen'
+    },
+    {
+      question: 'Ellen likes <span class="wordToTranslate"> strawberries </span> and blueberries.',
+      options: ['hjortron', 'jordgubbar', 'hallon'],
+      correct: 'jordgubbar'
     },
     {
       question: 'Barbro always wanted to visit <span class="wordToTranslate"> Germany </span>.',
       options: ['Danmark', 'Tyskland', 'Finland'],
       correct: 'Tyskland'            },
     {
-      question: 'Per would like to have <span class="wordToTranslate"> fish </span> for dinner.',
-      options: ['soppa', 'kyckling', 'fisk'],
-      correct: 'fisk'
+      question: 'For <span class="wordToTranslate"> dinner </span> the Lindströms are having pasta.',
+      options: ['middag', 'lunch', 'fika'],
+      correct: 'middag'
     },
     {
-      question: 'Christoffer got the <span class="wordToTranslate"> cat </span> when she was living in Malmö.',
-      options: ['musen', 'hunden', 'katten'],
-      correct: 'katten'
+      question: 'Christoffer got the <span class="wordToTranslate"> bird </span> when she was living in Malmö.',
+      options: ['musen', 'hunden', 'fågeln'],
+      correct: 'fågeln'
     },
     {
       question: 'Elin is having <span class="wordToTranslate"> ice cream </span> for dessert.',
@@ -166,9 +166,9 @@ $(() => {
       correct: 'morbröder'
     },
     {
-      question: 'Åsa will travel to the  <span class="wordToTranslate"> countryside </span>.',
-      options: ['staden', 'havet', 'landet'],
-      correct: 'landet'
+      question: 'Åsa will travel to the  <span class="wordToTranslate"> city </span>.',
+      options: ['staden', 'havet', 'stugan'],
+      correct: 'staden'
     },
     {
       question: 'Karl takes <span class="wordToTranslate"> self defence </span> classes.',
