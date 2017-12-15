@@ -36,15 +36,15 @@
 .instructionWindow p{
   color: white;
   font-size: 25px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .pickLanguage {
   display:flex;
   align-items: center;
   justify-content: center;
-  background-color:  #093E5C;
+  background-color: #093E5C;
   height: 20%;
 }
 

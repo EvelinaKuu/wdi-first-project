@@ -5,7 +5,7 @@ $(() => {
   const $startAgain = $('.startAgain');
   const $feedback = $('.feedback');
   const $popup = $('.popup');
-  const $starContainer = $('.starContainer');
+  const $star = $('.star');
   const $instructionWindow = $('.instructionWindow');
   const $spanish = $('#spanish');
   const $finnish = $('#finnish');
@@ -134,9 +134,9 @@ $(() => {
       correct: 'sko'
     },
     {
-      question: 'Håkon enjoys the <span class="wordToTranslate"> forests </span> in the summer time.',
-      options: ['skogene', 'hav', 'fjord'],
-      correct: 'skogene'
+      question: 'Håkon enjoys going to the <span class="wordToTranslate"> forest </span> in the summer time.',
+      options: ['skog', 'hav', 'fjord'],
+      correct: 'skog'
     },
     {
       question: 'Anita has <span class="wordToTranslate"> porridge </span> for breakfast.',
@@ -159,7 +159,7 @@ $(() => {
       correct: 'sykepleier'
     },
     {
-      question: 'Knut got the <span class="wordToTranslate"> snake </span> when she was living in Trondheim.',
+      question: 'Knut got the <span class="wordToTranslate"> snake </span> when he was living in Trondheim.',
       options: ['slange', 'hest', 'kanin'],
       correct: 'slange'
     },
@@ -206,7 +206,7 @@ $(() => {
       correct: 'middag'
     },
     {
-      question: 'Christoffer got the <span class="wordToTranslate"> bird </span> when she was living in Malmö.',
+      question: 'Christoffer got the <span class="wordToTranslate"> bird </span> when he was living in Malmö.',
       options: ['mus', 'hund', 'fågel'],
       correct: 'fågel'
     },
@@ -339,7 +339,7 @@ $(() => {
       if (level === 10) {
         $popup.css('display', 'flex');
         // $popup.delay(20000).fadeIn();
-        $starContainer.on('click', () => {
+        $star.on('click', () => {
           location.reload();
         });
       }
