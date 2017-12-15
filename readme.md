@@ -3,8 +3,8 @@
 #LEARNING NOUNS
 
 <figure>
-  <a href="put the heroku here"><img src="./images/translateScreenshot.png"></a>
-  <figcaption><a href="https://blj-ga-project1.herokuapp.com" title="LEARN NOUNS">My first project at GA: an educational game about learning nouns </a>.</figcaption>
+  <a href="https://mighty-forest-74507.herokuapp.com/"><img src="./images/translateScreenshot.png"></a>
+  <figcaption><a href="https://mighty-forest-74507.herokuapp.com/" title="LEARN NOUNS">My first project at GA: an educational game about learning nouns </a>.</figcaption>
 </figure>
 
 ### [](https;//github.com/benlloydjones/wdi-project-1#setup)Installation and setup
@@ -16,12 +16,12 @@
 
 #### View Online
 
-- [View on Heroku]()
+- [View on Heroku](https://mighty-forest-74507.herokuapp.com/)
 - [View on Github](https://github.com/EvelinaKuu/wdi-first-project.git)
 
 <figure>
-  <a href="https://blj-ga-project1.herokuapp.com"><img src="./images/instructionsScreenshot.png""></a>
-  <figcaption><a href="https://blj-ga-project1.herokuapp.com" title="Learn Nouns">The start of the game with the instructions and the language options</a>.</figcaption>
+  <a href="https://mighty-forest-74507.herokuapp.com/"><img src="./images/instructionsScreenshot.png""></a>
+  <figcaption><a href="https://mighty-forest-74507.herokuapp.com/" title="Learn Nouns">The start of the game with the instructions and the language options</a>.</figcaption>
 </figure>
 
 ### Technologies used
