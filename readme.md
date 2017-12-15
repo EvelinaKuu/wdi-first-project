@@ -38,6 +38,11 @@ To create this project I used the following technologies:
 - Github
 - Heroku
 
+### The Approach taken
+
+I started with wireframes to plan my project and went into detail in planning all the steps. As Learn nouns is an educational game I would keep in my during the planning that everything should support the users learning process.
+
+
 ### Challenges Faced
 
 In terms of coding my biggest challenge was the random function also the layout and styling in CSS was a big challenge.
