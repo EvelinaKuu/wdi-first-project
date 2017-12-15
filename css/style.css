@@ -231,9 +231,61 @@ p {
   align-items: center;
 }
 
-/*
-@media only screen and (max-width: 735px) {
+@media screen and (max-width: 735px) {
+
+  .instructionWindow {
+    font-size: 14 px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .language {
+    font-size: 14px;
+  }
+
+  .option{
+    font-size: 14px;
+    height: 50px;
+    width: 110px;
+  }
+
+  .choices{
+    font-size: 12px;
+  }
+
+  .sentence {
+    font-size: 20px;
+  }
+
+  .wordToTranslate{
+    font-size: 25px;
+  }
+
+  .feedbackSentence {
+    font-size: 18px;
+  }
+
+  .endOfPage {
+    font-size: 12px;
+  }
+
+  .startAgain {
+    font-size: 12px;
+    height: 40px;
+    width: 100px;
+  }
+
 }
 
-@media only screen and (max-width: 420px) {
-}*/
+@media screen and (max-width: 420px) {
+  .instructionWindow p {
+    font-size: 14px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .feedbackSentence {
+    font-size: 18px;
+  }
+
+}
