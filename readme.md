@@ -55,4 +55,4 @@ In the future I would:
   *  At the moment the game has Spanish, Finnish, Swedish and Norwegian, each with 10 levels and 10 sentences to translate. I also added a random function which will randomly select a sentence of any of the languages ten times. For the purpose of learning more nouns and words in one language levels should be added. Also it would be beneficial to add a feature to explain the words, so when you move up a level, you would not only know the right option and it's meaning but the other's as well.
 
 - Improve the code:
-  * The code could be dryer and also the CSS stylesheet probably have some overlaping styling that are unnecessary.
+  * The code could be dryer and also the CSS stylesheet probably have some overlapping styling that are unnecessary. Also the responsiveness could be improved, especially what comes to smaller screens like iPhone 5.

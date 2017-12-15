@@ -288,4 +288,45 @@ p {
     font-size: 18px;
   }
 
+   h1 {
+    font-size: 51;
+  }
+
+
+  .language {
+    font-size: 14px;
+  }
+
+  .option{
+    font-size: 14px;
+    height: 50px;
+    width: 110px;
+  }
+
+  .choices{
+    font-size: 12px;
+  }
+
+  .sentence {
+    font-size: 20px;
+  }
+
+  .wordToTranslate{
+    font-size: 25px;
+  }
+
+  .feedbackSentence {
+    font-size: 18px;
+  }
+
+  .level {
+    font-size: 20px;
+  }
+
+  .startAgain {
+    font-size: 12px;
+    height: 40px;
+    width: 100px;
+  }
+
 }
