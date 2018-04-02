@@ -14,6 +14,7 @@ $(() => {
   const $randomLanguages = $('#randomLanguages');
   const spanishQuestions = [
     {
+      // question: 'Daniela will take the <<< bus >>> to work.',
       question: 'Daniela will take the <span class="wordToTranslate"> bus </span> to work.',
       options: ['la bicileta', 'el tren', 'el autobus'],
       correct: 'el autobus'
@@ -246,7 +247,6 @@ $(() => {
   let currentLevel = null;
   let currentCorrect = null;
   let questionsArray = null;
-
 
 
   $instructionWindow.show();
