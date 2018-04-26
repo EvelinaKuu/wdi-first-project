@@ -1,9 +1,9 @@
-![ga_cog_large_red_rgb](https://cloud.githubusercontent.com/assets/40461/8183776/469f976e-1432-11e5-8199-6ac91363302b.png)
+.
 
 # LEARNING NOUNS
 
 ## Description
-As a first project on GA I made an educational game for learning nouns in Spanish, Swedish, Norwegian or Finnish. Each language has five stages with a sentence and word you find the right translation for. There is also an random option that will generate any sentence of any of the four languages. This is inspired by one of my favourite apps Duolingo. 
+As a first project on GA I made an educational game for learning nouns in Spanish, Swedish, Norwegian or Finnish. Each language has five stages with a sentence and word you find the right translation for. There is also an random option that will generate any sentence of any of the four languages. This is inspired by one of my favourite apps Duolingo.
 
 <figure>
   <a href="https://mighty-forest-74507.herokuapp.com/"><img src="./images/instructionsScreenshot.png""></a>

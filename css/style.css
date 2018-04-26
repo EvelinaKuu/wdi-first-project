@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:700');
 
-/*
-/** {
-    border: 1px solid black;
-}*/
 .instructionWindow {
   display: flex;
   flex-direction: column;

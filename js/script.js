@@ -14,7 +14,6 @@ $(() => {
   const $randomLanguages = $('#randomLanguages');
   const spanishQuestions = [
     {
-      // question: 'Daniela will take the <<< bus >>> to work.',
       question: 'Daniela will take the <span class="wordToTranslate"> bus </span> to work.',
       options: ['la bicileta', 'el tren', 'el autobus'],
       correct: 'el autobus'
@@ -247,16 +246,9 @@ $(() => {
   let currentLevel = null;
   let currentCorrect = null;
   let questionsArray = null;
-
-
+  //store the length of the array up here instead of using 11 in the loop
   $instructionWindow.show();
-
   $spanish.on('click', () => {
-
-    // console.log('clicked');
-    // var usersChoiceOfLanguage = event.target.textContent;
-    // // store the users choice inside a variable
-    // if (usersChoiceOfLanguage === $spanish) {
     questionsArray = spanishQuestions;
     $instructionWindow.hide();
     generateQuestion();
@@ -268,16 +260,13 @@ $(() => {
     generateQuestion();
   });
 
-
   $norwegian.on('click', () => {
-    // if (usersChoiceOfLanguage === $norwegian) {
     questionsArray = norwegianQuestions;
     $instructionWindow.hide();
     generateQuestion();
   });
 
   $swedish.on('click', () => {
-  // if (usersChoiceOfLanguage === $swedish) {
     questionsArray = swedishQuestions;
     $instructionWindow.hide();
     generateQuestion();
@@ -289,7 +278,6 @@ $(() => {
     for (let i = 0; i < 11; i++) {
       questionsArray.push(allQuestions.splice(Math.floor(Math.random() * allQuestions.length),1)[0]);
     }
-
 
     $instructionWindow.hide();
     generateQuestion();
@@ -311,25 +299,12 @@ $(() => {
     }
   }
 
-
-
-
-
-
-  // level++;
-  // how to increase level by one
-  // console.log(sentences[level].correct);
-  // document.getElementsByClass('sentences').innerHTML = sentences[0];
-
-
   $options.on('click', (event) => {
-    // console.log('clicked');
     var usersChoice = event.target.textContent;
     // store the users choice inside a variable
     if (usersChoice === currentCorrect) {
       $feedback.hide();
       $feedback.html('Well done! Now translate the next word!');
-      //$feedback.delay(2000).fadeOut();
       $feedback.fadeIn(function(){
         $feedback.delay(1900).fadeOut();
       });
@@ -345,10 +320,6 @@ $(() => {
       }
       generateQuestion();
 
-      // alert('Well done! Now translate the next word!');
-      // WHY ISN'T IT WORKING?!?!?
-      // $feedback.html('Well done! Now translate the next one!');
-      // $feedback.delay(2000).fadeOut();
     } else {
       $feedback.hide();
       $feedback.html('Sorry, try again');
@@ -365,7 +336,5 @@ $(() => {
     // storing the value of 0 into the variable level
     $displayLevel.html('0');
     generateQuestion();
-    // and then call for the function again and now when I first told the level to be 0 it will start with the first question
   });
-
 });
